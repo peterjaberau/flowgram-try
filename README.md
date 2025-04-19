@@ -27,15 +27,17 @@ rush dev:docs
 rush dev:demo-fixed-layout
 rush dev:demo-free-layout
 rush dev:demo-ai-rule-engine
+rush dev:demo-fixed-layout-simple
+rush dev:dev:demo-free-layout-simple
 
 rush dev:demo-nextjs
 cd apps/demo-nextjs pnpm dev
-
 
 #5. rush with vite
 cd apps/demo-basic-app
 nvm use lts/hydrogen
 rush add -p vite --dev --make-consistent
+rush update
 
 
 ```
