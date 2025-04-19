@@ -23,6 +23,10 @@ rush build
 
 
 #4. run docs or demo
+nvm use lts/hydrogen
+rush update
+
+
 rush dev:docs 
 rush dev:demo-fixed-layout
 rush dev:demo-free-layout

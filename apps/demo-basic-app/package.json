@@ -14,6 +14,18 @@
     "format": "npm run prettier:fix && npm run lint:fix"
   },
   "dependencies": {
+    "@douyinfe/semi-icons": "^2.78.0",
+    "@douyinfe/semi-ui": "^2.78.0",
+    "lodash-es": "^4.17.21",
+    "nanoid": "^4.0.2",
+    "styled-components": "^5",
+    "@devoinc/genesys-base-styles": "^2.1.0",
+    "@devoinc/genesys-brand-devo": "^8.3.3",
+    "@devoinc/genesys-icons": "^6.3.7",
+    "@devoinc/genesys-ui": "^17.23.1",
+    "@devoinc/genesys-ui-datetime": "^17.23.1",
+
+    "@flowgram.ai/demo-free-layout": "workspace:*",
     "@flowgram.ai/free-layout-editor": "workspace:*",
     "@flowgram.ai/free-snap-plugin": "workspace:*",
     "@flowgram.ai/free-node-panel-plugin": "workspace:*",
@@ -50,10 +62,10 @@
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "marked": "^15.0.3",
-    "react": "19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-apexcharts": "^1.7.0",
     "react-csv": "^2.2.2",
-    "react-dom": "19.0.0",
     "react-highlight-words": "^0.21.0",
     "react-hook-form": "^7.53.0",
     "react-i18next": "^15.0.1",
@@ -75,6 +87,10 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
+    "@types/styled-components": "^5",
+    "cross-env": "~7.0.3",
+
+
     "@eslint/compat": "^1.2.4",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.17.0",
@@ -85,9 +101,9 @@
     "@types/js-cookie": "^3.0.6",
     "@types/lodash": "^4.17.13",
     "@types/node": "^22.5.4",
-    "@types/react": "19.0.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@types/react-csv": "^1.1.10",
-    "@types/react-dom": "19.0.2",
     "@types/react-highlight-words": "^0.20.0",
     "@types/react-modal": "^3.16.3",
     "@types/react-scroll": "^1.8.10",
@@ -119,12 +135,12 @@
   },
   "overrides": {
     "gantt-task-react": {
-      "react": "19.0.0",
-      "react-dom": "19.0.0"
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
     },
     "react-simple-maps": {
-      "react": "19.0.0",
-      "react-dom": "19.0.0"
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
     },
     "react-syntax-highlighter": {
       "prismjs": "1.30.0"

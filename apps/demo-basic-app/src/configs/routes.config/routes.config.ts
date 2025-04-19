@@ -12,6 +12,20 @@ export const protectedRoutes: Routes = [
         component: lazy(() => import('@/views/Home')),
         authority: [],
     },
+    {
+        key: 'flow.freeLayout',
+        path: '/flow-free-layout',
+        component: lazy(() => import('@/views/flows/free-layout/BasicAppFreeEditor')),
+        authority: [],
+    },
+    {
+        key: 'flow.freeLayoutAdvanced',
+        path: '/flow-free-layout-advanced',
+        component: lazy(() => import('@/views/flows/free-layout-advanced/BasicAppFreeEditorAdvanced')),
+        authority: [],
+    },
+
+
     /** Example purpose only, please remove */
     {
         key: 'singleMenuItem',

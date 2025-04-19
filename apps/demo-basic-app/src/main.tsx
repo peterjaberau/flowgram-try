@@ -1,10 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+// import '@devoinc/genesys-base-styles/dist/css/styles.css'
+import { createRoot } from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-    <React.StrictMode>
+createRoot(document.getElementById('root')!).render(
         <App />
-    </React.StrictMode>,
 )

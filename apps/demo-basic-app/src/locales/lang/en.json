@@ -2,6 +2,13 @@
     "nav": {
         "home": "Home",
         "singleMenuItem": "Single menu item",
+        "flow": {
+            "index": "Flow",
+            "freeLayout": "Free layout",
+            "freeLayoutAdvanced": "Free layout advanced",
+            "fixedLayout": "Fixed layout",
+            "fixedLayoutAdvanced": "Fixed layout advanced"
+        },
         "collapseMenu": {
             "collapseMenu": "Collapse menu item",
             "item1": "Collapse menu item 1",

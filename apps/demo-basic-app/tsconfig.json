@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "es6", "es2020", "es2019.Array"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,10 +15,19 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "incremental": true,
+
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "types": ["bundler"],
+    "moduleDetection": "force",
+
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src",  "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

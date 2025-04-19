@@ -4,6 +4,8 @@ import Layout from '@/components/layouts'
 import { AuthProvider } from '@/auth'
 import Views from '@/views'
 import appConfig from './configs/app.config'
+import { ThemeProvider } from 'styled-components'
+import { light } from '@devoinc/genesys-brand-devo'
 
 if (appConfig.enableMock) {
     import('./mock')
@@ -11,15 +13,17 @@ if (appConfig.enableMock) {
 
 function App() {
     return (
-        <Theme>
-            <BrowserRouter>
-                <AuthProvider>
-                    <Layout>
-                        <Views />
-                    </Layout>
-                </AuthProvider>
-            </BrowserRouter>
-        </Theme>
+        <ThemeProvider theme={light}>
+            <Theme>
+                <BrowserRouter>
+                    <AuthProvider>
+                        <Layout>
+                            <Views />
+                        </Layout>
+                    </AuthProvider>
+                </BrowserRouter>
+            </Theme>
+        </ThemeProvider>
     )
 }
 

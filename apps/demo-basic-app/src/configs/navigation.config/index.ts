@@ -17,6 +17,39 @@ const navigationConfig: NavigationTree[] = [
         authority: [],
         subMenu: [],
     },
+    {
+        key: 'flow',
+        path: '',
+        title: 'Flow',
+        translateKey: 'nav.flow.index',
+        icon: 'collapseMenu',
+        type: NAV_ITEM_TYPE_COLLAPSE,
+        authority: [],
+        subMenu: [
+            {
+                key: 'flow.freeLayout',
+                path: '/flow-free-layout',
+                title: 'Free layout',
+                translateKey: 'nav.flow.freeLayout',
+                icon: '',
+                type: NAV_ITEM_TYPE_ITEM,
+                authority: [],
+                subMenu: [],
+            },
+
+            {
+                key: 'flow.freeLayoutAdvanced',
+                path: '/flow-free-layout-advanced',
+                title: 'Free layout advanced',
+                translateKey: 'nav.flow.freeLayoutAdvanced',
+                icon: '',
+                type: NAV_ITEM_TYPE_ITEM,
+                authority: [],
+                subMenu: [],
+            },
+
+        ],
+    },
     /** Example purpose only, please remove */
     {
         key: 'singleMenuItem',
