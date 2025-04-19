@@ -1,0 +1,394 @@
+:root {
+    --g-selection-background: #4d53e8;
+    --g-editor-background: #f2f3f5;
+    --g-playground-select: var(--g-selection-background);
+    --g-playground-hover: var(--g-selection-background);
+    --g-playground-line: var(--g-selection-background);
+    --g-playground-blur: #999;
+    --g-playground-selectBox-outline: var(--g-selection-background);
+    --g-playground-selectBox-background: #8d90e71a;
+    --g-playground-select-hover-background: #4d53e81a;
+    --g-playground-select-control-size: 12px;
+}
+
+.gedit-playground {
+    z-index: 10;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    background-color: var(--g-editor-background);
+    outline: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.gedit-playground-scroll-right {
+    z-index: 10;
+    width: 7px;
+    height: 100vh;
+    position: absolute;
+    right: 2px;
+}
+
+.gedit-playground-scroll-bottom {
+    z-index: 10;
+    width: 100vw;
+    height: 7px;
+    position: absolute;
+    bottom: 2px;
+}
+
+.gedit-playground-scroll-right-block {
+    opacity: .3;
+    border-radius: 3.5px;
+    position: absolute;
+}
+
+.gedit-playground-scroll-right-block:hover {
+    opacity: .6;
+}
+
+.gedit-playground-scroll-bottom-block {
+    opacity: .3;
+    border-radius: 3.5px;
+    position: absolute;
+}
+
+.gedit-playground-scroll-bottom-block:hover {
+    opacity: .6;
+}
+
+.gedit-playground-scroll-hidden {
+    opacity: 0;
+}
+
+.gedit-playground * {
+    box-sizing: border-box;
+}
+
+.gedit-playground-loading {
+    color: #fff;
+    z-index: 100;
+    text-align: center;
+    opacity: .8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .8s;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.gedit-hidden {
+    display: none;
+}
+
+.gedit-playground-pipeline {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+
+.gedit-playground-pipeline:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gedit-playground-layer {
+    position: absolute;
+    overflow: visible;
+}
+
+.gedit-selector-box {
+    z-index: 33;
+    outline: 1px solid var(--g-playground-selectBox-outline);
+    background-color: var(--g-playground-selectBox-background);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gedit-selector-box-block {
+    z-index: 9999;
+    background-color: #0000;
+    width: 0;
+    height: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gedit-selector-bounds-background {
+    outline: 1px solid var(--g-playground-selectBox-outline);
+    background-color: #f0f4ff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gedit-selector-bounds-foreground {
+    z-index: 33;
+    background: #fff0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gedit-flow-activity-node {
+    position: absolute;
+}
+
+.gedit-grid-svg {
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.gedit-selector-bounds-background {
+    cursor: move;
+    display: none !important;
+}
+
+.gedit-selector-bounds-foreground {
+    cursor: move;
+    outline: 1px solid var(--g-playground-selectBox-outline);
+    z-index: 33;
+    background-color: var(--g-playground-selectBox-background);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.demo-editor {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+
+.demo-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.demo-tools {
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+}
+
+.demo-tools-group > * {
+    margin-right: 8px;
+}
+
+.port-if {
+    position: absolute;
+    top: 36px;
+    right: 0;
+}
+
+.mouse-pad-option-icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form-item-type-tag {
+    color: inherit;
+    vertical-align: middle;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    padding: 0 2px;
+}
+
+.line-add-button {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: inherit;
+    position: absolute;
+    transform: translate(-50%, -60%);
+}
+
+.node-placeholder {
+    background-color: #fcfcff;
+    border: 1px solid #44538240;
+    border-radius: 8px;
+    width: 360px;
+    box-shadow: 0 4px 12px #00000005, 0 2px 6px #0000000a;
+}
+
+.node-placeholder-skeleton {
+    background-color: #fcfcff;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+}
+
+.node-placeholder-skeleton .semi-skeleton-avatar {
+    background-color: #44538240;
+}
+
+.node-placeholder-skeleton .semi-skeleton-title {
+    background-color: #52649a21;
+    border-radius: 4px;
+    height: 16px;
+}
+
+.node-placeholder-hd {
+    align-items: center;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.node-placeholder-avatar {
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.node-placeholder-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    display: flex;
+}
+
+.node-placeholder-footer {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5px;
+    display: flex;
+}
+
+.ui-mouse-pad-selector {
+    box-sizing: border-box;
+    border: 1px solid #1d1c2314;
+    border-radius: 8px;
+    align-items: center;
+    width: 68px;
+    height: 32px;
+    padding: 8px 12px;
+    display: flex;
+    position: relative;
+}
+
+.ui-mouse-pad-selector-icon {
+    height: 20px;
+    margin-right: 12px;
+}
+
+.ui-mouse-pad-selector-arrow {
+    height: 16px;
+    font-size: 12px;
+}
+
+.ui-mouse-pad-selector-popover {
+    padding: 16px;
+}
+
+.ui-mouse-pad-selector-popover-options {
+    gap: 12px;
+    margin-top: 12px;
+    display: flex;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option {
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--coz-mg-card, #fff);
+    border: 1px solid var(--coz-stroke-plus, #06070926);
+    border-radius: var(--default, 8px);
+    width: 220px;
+    padding-bottom: 20px;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option-icon {
+    padding-top: 26px;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option-title {
+    padding-top: 8px;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option-subTitle {
+    padding: 4px 12px 0;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option-icon-selected {
+    color: #1300dd;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option-title-selected, .ui-mouse-pad-selector-popover .mouse-pad-option-subTitle-selected {
+    color: var(--coz-fg-hglt, #4e40e5);
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option-selected {
+    cursor: pointer;
+    background-color: var(--coz-mg-hglt, #bac0ff33);
+    border: 1px solid var(--coz-stroke-hglt, #4e40e5);
+    border-radius: var(--default, 8px);
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option:hover:not(.ui-mouse-pad-selector-popover .mouse-pad-option-selected) {
+    cursor: pointer;
+    background-color: var(--coz-mg-card-hovered, #fff);
+    border: 1px solid var(--coz-stroke-plus, #06070926);
+    border-radius: var(--default, 8px);
+    box-shadow: 0 8px 24px #00000029, 0 16px 48px #00000014;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option:active:not(.ui-mouse-pad-selector-popover .mouse-pad-option-selected) {
+    background-color: #2e2e381f;
+}
+
+.ui-mouse-pad-selector-popover .mouse-pad-option:last-of-type {
+    padding-top: 13px;
+}
+
+.ui-mouse-pad-selector:hover {
+    cursor: pointer;
+    background-color: #2e2e3814;
+    border-color: #4d53e8;
+}
+
+.ui-mouse-pad-selector:active, .ui-mouse-pad-selector:focus {
+    background-color: #2e2e381f;
+    border-color: #4d53e8;
+}
+
+.ui-mouse-pad-selector-active {
+    border-color: #4d53e8;
+}

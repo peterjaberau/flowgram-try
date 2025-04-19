@@ -1,0 +1,1095 @@
+.bitable-workflow-loading-screen {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    background: var(--N100);
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+.bitable-workflow-loading-screen,
+.bitable-workflow-loading-screen-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.bitable-workflow-loading-screen-content {
+    margin-bottom: 60px;
+}
+.bitable-workflow-loading-screen-error-tips {
+    color: var(--N900);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 18px 0;
+}
+.bitable-workflow-builder-node-select {
+    background-color: var(--bg-float);
+    height: auto;
+    min-width: 240px;
+    overflow-y: auto;
+    width: 100%;
+}
+.bitable-workflow-builder-node-select::-webkit-scrollbar {
+    bottom: 0;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+}
+.bitable-workflow-builder-node-select::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+}
+.bitable-workflow-builder-node-select::-webkit-scrollbar-thumb {
+    background: transparent;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    min-height: 24px;
+}
+.bitable-workflow-builder-node-select::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.bitable-workflow-builder-node-select:hover::-webkit-scrollbar-thumb {
+    background: var(--N900-30);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.bitable-workflow-builder-node-select:hover::-webkit-scrollbar-thumb:hover {
+    background: var(--N900-60);
+    background-clip: content-box;
+}
+.bitable-workflow-builder-node-select::-webkit-scrollbar {
+    background-color: var(--bg-float) !important;
+    border-radius: 0 6px 6px 0;
+}
+.bitable-workflow-builder-node-select-title {
+    color: var(--N500);
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 22px;
+    padding: 5px 3px 5px 11px;
+}
+.bitable-workflow-builder-node-select-menu-item-children {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.bitable-workflow-builder-node-select-menu-item-children-icon {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    height: 20px;
+    justify-content: center;
+    margin-right: 8px;
+    min-width: 20px;
+}
+.bitable-workflow-builder-node-select-menu-item-children-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+.bitable-workflow-builder-node-select-menu-item-children-payStatus {
+    cursor: pointer !important;
+    margin-left: 6px !important;
+    margin-top: 2px !important;
+}
+.bitable-workflow-builder-node-select
+.ud__menu-normal-item-selected
+> .ud__menu-normal-item-suffix-icon {
+    font-size: 16px;
+}
+.bitable-workflow-builder-node-select-menu-item-popover {
+    z-index: 1060 !important;
+}
+.bitable-workflow-builder-node-select-wrapper-v2 {
+    height: 100%;
+}
+.bitable-workflow-builder-node-select-wrapper-v2
+.ud__menu-normal-item-group-title {
+    padding: 8px 14px 4px;
+}
+.bitable-workflow-builder-node-select-wrapper-v2
+.ud__menu-normal-item-group-title
+> * {
+    font-weight: 400;
+}
+.bitable-workflow-builder-node-select-wrapper-v2-failed {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+.bitable-workflow-builder-node-select-wrapper-v2-tips {
+    color: var(--N600);
+    display: block;
+    padding: 6px 12px;
+}
+.bwbnsw-step-icon {
+    -webkit-user-drag: none;
+    border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+}
+.bitable-workflow-builder-canvas-engine-default-node > .bwbnsw-step-icon,
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icon
+> .bwbnsw-step-icon {
+    border-radius: 10px;
+}
+.base-workflow-builder-step-root_header-left-icon > .bwbnsw-step-icon {
+    border-radius: 6px;
+}
+.bitable-workflow-builder-node-select-menu-item-children-icon
+> .bwbnsw-step-icon {
+    border-radius: 5px;
+}
+
+
+.bitable-workflow-builder-node-select-more {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background-color: var(--N50);
+    border: 1px solid var(--N400);
+    border-radius: 6px;
+    color: var(--icon-n2);
+    cursor: pointer;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    font-size: 18px;
+    height: 32px;
+    justify-content: center;
+    -webkit-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    -o-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    width: 32px;
+}
+.bitable-workflow-builder-node-select-more:hover {
+    background: var(--N300);
+}
+.flow-canvas-collapse-adder > .flow-canvas-collapse {
+    display: none !important;
+}
+.flow-canvas-collapse-adder {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+}
+.bitable-workflow-builder-node-select-more--disable {
+    color: var(--icon-disabled);
+    cursor: not-allowed;
+}
+
+
+.bitable-workflow-node-adder {
+    -webkit-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    -o-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+}
+.bitable-workflow-node-adder[data-force-show="true"],
+.bitable-workflow-node-adder[data-panel-opened="true"] {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.bitable-workflow-node-adder[data-hidden="true"] {
+    pointer-events: none;
+    visibility: hidden;
+}
+.bitable-workflow-node-adder .universe-icon {
+    -webkit-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    -o-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+}
+.bitable-workflow-node-adder .universe-icon:hover,
+.bitable-workflow-node-adder[data-panel-opened="true"] .universe-icon {
+    background: var(--N300);
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node {
+    background: var(--bg-body-overlay);
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-35px, 12px);
+    -ms-transform: translate(-35px, 12px);
+    transform: translate(-35px, 12px);
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node[data-is-dark-mode="true"] {
+    background: var(--bg-base);
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4px;
+    padding: 2px 8px;
+    width: 120px;
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass-yes_icon {
+    color: var(--G500);
+    font-size: 14px;
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass-no_icon {
+    color: var(--function-danger-500);
+    font-size: 14px;
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass-text {
+    color: var(--text-title);
+    height: 26px;
+    line-height: 26px;
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass-del {
+    opacity: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass:hover
+.bitable-workflow-builder-canvas-engine-default-node-branch-node-pass-del {
+    opacity: 1;
+}
+.bitable-workflow-builder-canvas-engine-default-node {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 30px;
+    min-width: 404px;
+    position: relative;
+}
+.bitable-workflow-builder-canvas-engine-default-node-index {
+    color: var(--text-placeholder);
+    font-size: 16px;
+    height: 24px;
+    left: -20px;
+    line-height: 24px;
+    min-width: 24px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.bitable-workflow-builder-canvas-engine-default-node-drag {
+    border-radius: 12px;
+    -webkit-box-shadow: var(--shadow-s1-down);
+    box-shadow: var(--shadow-s1-down);
+}
+.bitable-workflow-builder-canvas-engine-default-node-drag
+.bitable-workflow-builder-canvas-engine-step-node {
+    border-radius: 12px;
+    opacity: 0.4;
+}
+.bitable-workflow-builder-canvas-engine-default-node-drag
+.bitable-workflow-builder-canvas-engine-step-node-dark {
+    background-color: var(--N100) !important;
+}
+.bitable-workflow-builder-canvas-engine-default-node-drag
+.bitable-workflow-builder-canvas-engine-step-node-light {
+    background-color: var(--bg-content-base) !important;
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-more_overlay
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu {
+    min-width: 160px;
+    overflow-x: hidden;
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-more_overlay
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu-item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-more_overlay
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu-item_del:hover {
+    background-color: var(--function-danger-50);
+    color: var(--function-danger-500);
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-more_overlay
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu-item_del:hover
+.universe-icon {
+    color: var(--function-danger-500);
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-more_overlay
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu-item
+.universe-icon {
+    color: var(--icon-n2);
+    font-size: 16px;
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu-submenu
+.ud__menu-normal {
+    border-radius: 6px;
+    padding: 0;
+}
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons_menu-submenu
+.ud__menu-normal-sub {
+    border: none !important;
+}
+
+
+.bitable-workflow-builder-canvas-engine-default-node {
+    font-size: 14px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node {
+    -webkit-box-shadow: var(--shadow-s1-down);
+    box-shadow: var(--shadow-s1-down);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-drag-icon {
+    color: var(--icon-n3);
+    font-size: 16px;
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-dark {
+    background-color: var(--bg-body);
+    border-radius: 12px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-dark:hover {
+    background-color: var(--N100);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-light {
+    background-color: var(--bg-body);
+    border-radius: 12px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-light:hover {
+    background-color: var(--bg-content-base);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-wrapper
+.bitable-workflow-builder-canvas-engine-step-node-content {
+    background-color: var(--primary-pri-50);
+    outline: 1px solid var(--primary-pri-500);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-wrapper
+.bitable-workflow-builder-canvas-engine-step-node-content:hover {
+    background-color: var(--primary-pri-50) !important;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-wrapper
+.bitable-workflow-builder-canvas-engine-step-node-content-bottom {
+    background-color: var(--primary-pri-100);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-wrapper
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper {
+    border: 1px solid var(--primary-pri-200);
+    color: var(--primary-pri-500);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    border-radius: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 86px;
+    width: 404px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 20px;
+    width: 404px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    height: 44px;
+    justify-content: center;
+    min-width: 44px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icon-skeleton
+> .ud__skeleton__item {
+    border-radius: 10px;
+    height: 44px;
+    margin-bottom: 0;
+    width: 44px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 14px;
+    overflow: hidden;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-title {
+    font-size: 16px;
+    min-height: 22px;
+    width: 100%;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-title-skeleton {
+    height: 14px;
+    width: 80px !important;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-title_input {
+    height: 24px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-title_input
+.ud__native-input {
+    font-size: 16px;
+    font-weight: 500;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-title_text {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--text-title);
+    display: -webkit-box;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-desc {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--text-caption);
+    display: -webkit-box;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
+    min-height: 22px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-desc
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-desc-skeleton {
+    border-radius: 7px;
+    margin-bottom: 0;
+    margin-top: 3px;
+    width: 160px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-main-desc_error {
+    color: var(--text-caption);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    height: 44px;
+    justify-content: flex-end;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-warring {
+    font-size: 18px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-top-icons-more {
+    color: var(--icon-n2);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-content-bottom {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--bg-content-base);
+    border-radius: 0 0 12px 12px;
+    color: var(--text-caption);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+    height: 36px;
+    padding: 0 0 0 22px;
+    width: 404px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-switch-branch-wrapper {
+    cursor: default;
+    height: 52px;
+    left: calc(50% - 201px);
+    position: absolute;
+    top: 100%;
+    width: 404px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-switch-branch-wrapper:hover
+> div {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-switch-branch-wrapper-icon {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background: var(--N00);
+    border-radius: 50%;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 28px;
+    justify-content: center;
+    left: calc(50% - 14px);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 14px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    -o-transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    transition: all 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    width: 28px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-switch-branch-wrapper-icon:hover {
+    background: var(--N200);
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-switch-branch-wrapper-icon-disable {
+    color: var(--icon-disabled);
+    cursor: not-allowed;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-failed {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--N600);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 auto;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-step-node-failed
+> p {
+    margin-right: 4px;
+}
+.bitable-workflow-builder-canvas-engine-default-node:hover
+.bitable-workflow-builder-canvas-engine-step-node-drag-icon {
+    opacity: 1;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node {
+    border-radius: 12px;
+    -webkit-box-shadow: var(--shadow-s1-down);
+    box-shadow: var(--shadow-s1-down);
+    min-height: 86px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-card {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    gap: 8px;
+    min-height: 86px;
+    padding: 26px 20px;
+    width: 404px;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-card-disabled {
+    cursor: not-allowed !important;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-card-disabled
+.bitable-workflow-builder-canvas-engine-init-node-card-title,
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-card-disabled
+.bitable-workflow-builder-canvas-engine-init-node-card-title_tag {
+    color: var(--text-disabled);
+    cursor: not-allowed !important;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-card-title {
+    color: var(--text-title);
+    font-weight: 500;
+}
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-card-title_tag {
+    background-color: var(--bg-body-overlay);
+    border-radius: 6px;
+    color: var(--text-placeholder);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px 10px;
+}
+
+
+.bitable-workflow-builder-canvas-engine-default-node
+.bitable-workflow-builder-canvas-engine-init-node-shake {
+    -webkit-animation: shake 0.8s ease-in-out infinite;
+    animation: shake 0.8s ease-in-out infinite;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.bitable-workflow-builder-canvas-engine-drag-node {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    margin: 0 !important;
+    position: relative;
+    z-index: 0;
+}
+.bitable-workflow-builder-canvas-engine-drag-node
+.bitable-workflow-builder-canvas-engine-step-node {
+    background-color: var(--N00-70);
+    border-radius: 12px;
+    -webkit-box-shadow: var(--shadow-s2-down);
+    box-shadow: var(--shadow-s2-down);
+    position: relative;
+    z-index: 3;
+}
+.bitable-workflow-builder-canvas-engine-drag-node-branch
+.bitable-workflow-builder-canvas-engine-step-node-second-layer,
+.bitable-workflow-builder-canvas-engine-drag-node-branch
+.bitable-workflow-builder-canvas-engine-step-node-third-layer {
+    background-color: var(--N00-10);
+    border-radius: 12px;
+    -webkit-box-shadow: var(--shadow-s2-down);
+    box-shadow: var(--shadow-s2-down);
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.bitable-workflow-builder-canvas-engine-drag-node-branch
+.bitable-workflow-builder-canvas-engine-step-node-second-layer {
+    top: 6px;
+    width: calc(100% - 18px);
+    z-index: 2;
+}
+.bitable-workflow-builder-canvas-engine-drag-node-branch
+.bitable-workflow-builder-canvas-engine-step-node-third-layer {
+    top: 12px;
+    width: calc(100% - 48px);
+    z-index: 1;
+}
+.bitable-workflow-builder-canvas-engine-drag-node-badge .ud__badge__badge {
+    --size: 24px;
+    background-color: var(--primary-pri-500);
+    border-radius: calc(var(--size) / 2) !important;
+    height: var(--size);
+    width: var(--size);
+}
+.bitable-workflow-builder-canvas-engine-drag-node-badge
+.ud__badge__badge
+.ud__badge__badge__content {
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+}
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    background-color: var(--bg-body);
+    border: 1px solid var(--bg-body-overlay);
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    left: 50%;
+    overflow: hidden;
+    padding: 9px;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 32px;
+    z-index: 99;
+}
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper-icon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    font-size: 14px;
+    justify-content: center;
+}
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper-icon_text {
+    color: var(--text-title);
+    display: inline-block;
+    font-size: 14px;
+    height: 0;
+    max-width: 0;
+    -webkit-transition: max-width 0.3s cubic-bezier(0.34, 0.69, 0.1, 1);
+    -o-transition: max-width 0.3s cubic-bezier(0.34, 0.69, 0.1, 1);
+    transition: max-width 0.3s cubic-bezier(0.34, 0.69, 0.1, 1);
+    visibility: hidden;
+    white-space: nowrap;
+}
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper:hover {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper:hover
+.bitable-workflow-builder-canvas-engine-default-node-header_wrapper-icon_text {
+    height: auto;
+    margin-left: 4px;
+    max-width: 100px;
+    -webkit-transition: all 0.3s cubic-bezier(0.34, 0.69, 0.1, 1);
+    -o-transition: all 0.3s cubic-bezier(0.34, 0.69, 0.1, 1);
+    transition: all 0.3s cubic-bezier(0.34, 0.69, 0.1, 1);
+    visibility: visible;
+}
+
+
+.bitable-workflow-builder-canvas-engine-header-container {
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+}
+.bitable-workflow-builder-canvas-engine-header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    height: 56px;
+    justify-content: space-between;
+    width: 100%;
+}
+.bitable-workflow-builder-canvas-engine-header,
+.bitable-workflow-builder-canvas-engine-header-edit {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.bitable-workflow-builder-canvas-engine-header-edit {
+    background: var(--N50);
+    border-bottom-right-radius: 10px;
+    gap: 16px;
+    height: 100%;
+    padding: 0 20px;
+    width: auto;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-dark {
+    background-color: var(--bg-base);
+    -webkit-box-shadow: 0 -2px 24px 28px var(--bg-base);
+    box-shadow: 0 -2px 24px 28px var(--bg-base);
+}
+.bitable-workflow-builder-canvas-engine-header-edit-light {
+    background-color: var(--bg-body-overlay);
+    -webkit-box-shadow: 0 -2px 24px 28px var(--bg-body-overlay);
+    box-shadow: 0 -2px 24px 28px var(--bg-body-overlay);
+}
+.bitable-workflow-builder-canvas-engine-header-edit-title {
+    gap: 4px;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-title,
+.bitable-workflow-builder-canvas-engine-header-edit-title_edit {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-title_edit-wrapper {
+    color: var(--text-title);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 5px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-title_edit-wrapper:hover {
+    border-radius: 6px;
+    outline: 1px solid var(--line-border-component);
+}
+.bitable-workflow-builder-canvas-engine-header-edit-title_edit-input {
+    border-radius: 6px;
+    color: var(--text-title);
+    height: 30px;
+    width: auto;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-title_edit-input
+.ud__native-input {
+    font-size: 16px;
+    font-weight: 500;
+}
+.bitable-workflow-builder-canvas-engine-header-edit
+.ud__switch-checked
+.ud__switch__handler {
+    left: calc(100% - 18px) !important;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-switch {
+    height: 20px !important;
+}
+.bitable-workflow-builder-canvas-engine-header-edit-switch
+.ud__switch__handler {
+    height: 16px !important;
+    width: 16px !important;
+}
+.bitable-workflow-builder-canvas-engine-header-submit {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--N50);
+    border-bottom-left-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    padding: 0 20px;
+    width: auto;
+}
+.bitable-workflow-builder-canvas-engine-header-submit-dark {
+    background-color: var(--bg-base);
+    -webkit-box-shadow: 0 -2px 24px 28px var(--bg-base);
+    box-shadow: 0 -2px 24px 28px var(--bg-base);
+}
+.bitable-workflow-builder-canvas-engine-header-submit-light {
+    background-color: var(--bg-body-overlay);
+    -webkit-box-shadow: 0 -2px 24px 28px var(--bg-body-overlay);
+    box-shadow: 0 -2px 24px 28px var(--bg-body-overlay);
+}
+.bitable-workflow-builder-canvas-engine-header-submit-log {
+    color: var(--text-caption);
+}
+
+
+.bitable-workflow-control-buttons {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    bottom: 58px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    width: 260px;
+    z-index: 13;
+}
+.bitable-workflow-control-buttons,
+.bitable-workflow-control-buttons-content {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.bitable-workflow-control-buttons-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 183px;
+}
+.bitable-workflow-control-buttons-content > .icon {
+    color: var(--icon-n3);
+    cursor: pointer;
+    font-size: 18px;
+    height: 24px;
+    line-height: 24px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 24px;
+}
+.bitable-workflow-control-buttons-content > .icon[data-active="true"] {
+    background-color: var(--udtoken-btn-text-bg-pri-hover);
+    color: var(--primary-content-default);
+}
+.bitable-workflow-control-buttons-content > .icon[data-active="true"]:hover {
+    background-color: var(--primary-fill-transparent-03) !important;
+    color: var(--primary-content-default) !important;
+}
+.bitable-workflow-control-buttons-content > .icon:hover {
+    color: var(--icon-n3);
+}
+.bitable-workflow-control-buttons-content > .icon-fit-view {
+    margin-left: 8px;
+}
+.bitable-workflow-control-buttons-content > .zoom-value {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    color: var(--text-placeholder);
+    cursor: default;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 44px;
+}
+.bitable-workflow-control-buttons-empty {
+    width: 83px;
+}
+.bitable-workflow-control-buttons-dark {
+    background-color: var(--bg-base);
+    -webkit-box-shadow: 0 -2px 24px 28px var(--bg-base);
+    box-shadow: 0 -2px 24px 28px var(--bg-base);
+}
+.bitable-workflow-control-buttons-light {
+    background-color: var(--bg-body-overlay);
+    -webkit-box-shadow: 0 -2px 24px 28px var(--bg-body-overlay);
+    box-shadow: 0 -2px 24px 28px var(--bg-body-overlay);
+}
+
+.bitable-workflow-custom-action-markdown-input
+.bitable-automation-tag-editor__editor-comp {
+    min-height: 136px !important;
+}

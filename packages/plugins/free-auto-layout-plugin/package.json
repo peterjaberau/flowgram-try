@@ -36,6 +36,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "typescript": "^5.0.4",
     "@flowgram.ai/eslint-config": "workspace:*",
     "@flowgram.ai/ts-config": "workspace:*",
     "@types/bezier-js": "4.1.3",

@@ -1,9 +1,9 @@
 export default {
   languageId: 'zh-CN',
   languageName: 'Chinese',
-  localizedLanguageName: '中文(中国)',
+  localizedLanguageName: 'Chinese',
   contents: {
-    Yes: '是',
-    No: '否',
+    Yes: 'Yes',
+    No: 'No',
   },
 };

@@ -1,0 +1,167 @@
+.gedit-flow-labels-layer > div > div {
+    color: var(--N500) !important;
+    font-size: 14px !important;
+}
+.gedit-playground,
+.gedit-playground-container {
+    height: 100%;
+    width: 100%;
+}
+.gedit-playground {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.gedit-playground .hidden {
+    display: block;
+}
+.gedit-visibility-hidden {
+    visibility: hidden !important;
+}
+.gedit-transition-ease {
+    -webkit-transition: left, top 0.3s ease;
+    -o-transition: left, top 0.3s ease;
+    transition: left, top 0.3s ease;
+}
+.gedit-playground-scroll-right {
+    height: 100vh;
+    position: absolute;
+    right: 2px;
+    width: 7px;
+    z-index: 16;
+}
+.gedit-playground-scroll-bottom {
+    bottom: 2px;
+    height: 7px;
+    position: absolute;
+    width: 100vw;
+    z-index: 16;
+}
+.gedit-playground-scroll-right-block {
+    background: var(--N900) !important;
+    border-radius: 3.5px;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 16 !important;
+}
+.gedit-playground-scroll-right-block:hover {
+    opacity: 0.6;
+}
+.gedit-playground-scroll-bottom-block {
+    background: var(--N900) !important;
+    border-radius: 3.5px;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 16 !important;
+}
+.gedit-playground-scroll-bottom-block:hover {
+    opacity: 0.6;
+}
+.gedit-playground * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.gedit-playground-loading {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    align-items: center;
+    color: var(--N00);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+    z-index: 100;
+}
+.gedit-hidden {
+    display: none;
+}
+.gedit-playground-pipeline {
+    height: 100%;
+    left: 0;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.gedit-playground-pipeline:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+.gedit-playground-layer {
+    overflow: visible;
+    position: absolute;
+}
+.gedit-drag-handler {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+.gedit-selector-box {
+    background-color: var(--g-playground-selectBox-background);
+    outline: 1px solid var(--g-playground-selectBox-outline);
+    z-index: 33;
+}
+.gedit-selector-box,
+.gedit-selector-box-block {
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.gedit-selector-box-block {
+    background-color: var(--N1000);
+    display: none;
+    z-index: 9999;
+}
+.gedit-selector-bounds-background {
+    background-color: var(--B50);
+    height: 0;
+    left: 0;
+    outline: 1px solid var(--g-playground-selectBox-outline);
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.gedit-selector-bounds-foreground {
+    background: transparent;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 33;
+}
+.gedit-flow-activity-node,
+.gedit-grid-svg {
+    position: absolute;
+}
+.gedit-grid-svg {
+    display: block;
+    height: 0;
+    left: 20px;
+    top: 20px;
+    width: 0;
+}

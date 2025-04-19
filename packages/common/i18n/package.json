@@ -28,6 +28,7 @@
     "@flowgram.ai/utils": "workspace:*"
   },
   "devDependencies": {
+    "typescript": "^5.0.4",
     "@flowgram.ai/eslint-config": "workspace:*",
     "@flowgram.ai/ts-config": "workspace:*",
     "@testing-library/react": "^12",
